@@ -5,6 +5,7 @@ tr=turtle.Turtle()
 tr.pensize(3)
 tr.speed(10)
 
+#draw center
 tr.fillcolor("Yellow")
 tr.color("Yellow")
 tr.penup
@@ -14,6 +15,7 @@ tr.pendown
 tr.circle(50)
 tr.end_fill()
 
+#draw petals
 tr.color("Red")
 tr.pendown()
 tr.fillcolor("Red")
@@ -28,7 +30,7 @@ for i in range(6):
     tr.circle(-60)
     tr.end_fill()
 
-
+#draw stem
 tr.penup()
 tr.goto(-55,-79)
 tr.setheading(90)
