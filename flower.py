@@ -1,6 +1,9 @@
 import turtle
 
 tr=turtle.Turtle()
+screen = turtle.Screen()
+
+screen.bgcolor("lightblue")
 
 tr.pensize(3)
 tr.speed(10)
@@ -32,7 +35,7 @@ for i in range(6):
 
 #draw stem
 tr.penup()
-tr.goto(-55,-79)
+tr.goto(-55,-80)
 tr.setheading(90)
 tr.pendown()
 tr.pensize(6)
