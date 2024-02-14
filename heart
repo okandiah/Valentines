@@ -1,11 +1,12 @@
 import numpy as np 
-from scripy.integrate import solve_ivp
+from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 
 def dxft(t,x):
     dx=[x[1],-36*x[0]+3*np.sin(4*t)]
     return dx
 
-sol = solve_ivp(dxdt,[0,10],[0,0])
+sol = solve_ivp(dxft,[0,10],[0,0])
 plt.figure()
 plt.plot(sol.y[0],sol.y[1],'r-')
+plt.show()
